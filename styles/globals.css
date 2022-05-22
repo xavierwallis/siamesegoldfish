@@ -1,11 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
+  background: #ffaa17;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
-
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #FFF #ffaa17;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: #ffaa17;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius: 10px;
+  
+}
+//background: linear-gradient(to top, #ffc051, #ffaa17, #ffa200, #ffaa17);
 a {
   color: inherit;
   text-decoration: none;
